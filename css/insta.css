@@ -145,10 +145,11 @@
 
 .insta_slide_footer_like, .insta_slide_footer_comment, .insta_slide_footer_direct, .insta_slide_footer_save, .insta_slide_footer_dots {
   border: none;
-  background-size: auto;
+  background-size: cover;
   width: 16px;
   height: 16px;
   background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .insta_end {
