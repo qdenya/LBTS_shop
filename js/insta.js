@@ -22,7 +22,8 @@ function createGalery(items) {
           <button class="insta_slide_footer_dots"></button>
         </div>
       </div>
-      <div class="insta_slide_photo" style="background: url(${media_url}) center center; background-size: cover; "></div>
+      <a href="${permalink}">
+      <div class="insta_slide_photo" style="background: url(${media_url}) center center; background-size: cover; "></div></a>
       <div class="insta_slide_footer">
         <div class="insta_slide_footer_left">
           <a href="${permalink}" class="insta_slide_footer_like"></a>
