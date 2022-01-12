@@ -146,8 +146,8 @@
 .insta_slide_footer_like, .insta_slide_footer_comment, .insta_slide_footer_direct, .insta_slide_footer_save, .insta_slide_footer_dots {
   border: none;
   background-size: cover;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   background-repeat: no-repeat;
   background-position: center center;
 }
