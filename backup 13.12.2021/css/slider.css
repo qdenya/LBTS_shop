@@ -1,0 +1,188 @@
+.slide {
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+
+.slide_1n {
+  background: #DFF0FF url("https://qdenya.ru/box.png") no-repeat top right 25%;
+  background-size: contain;
+}
+
+.slide_2n {
+  background: #b3b3b3 url("../img/slide-image-1.png") no-repeat top right 25%;
+  background-size: contain;
+}
+
+.slide_3n {
+  background: #b3b3b3 url("../img/slide-image-1.png") no-repeat top right 25%;
+  background-size: contain;
+}
+
+.slide_title {
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #262D33;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.slide_description {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #4B5157;
+  max-width: 335px;
+  margin-bottom: 40px;
+}
+
+.slide_nav {
+  z-index: 9;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.slide_button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-color: #4592FF;
+  border-radius: 20px;
+  padding: 10px 28px;
+  text-decoration: none !important;
+}
+
+.slide_button_text {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.slide_button_nav {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.slide_label {
+  background: #3DC47E;
+  border-radius: 3px;
+  padding: 5px 12px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+.slider {
+  overflow: hidden;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  .slide_1n, .slide_2n, .slide_3n {
+    background: #DFF0FF url("https://qdenya.ru/box.png") no-repeat top right 10px;
+    background-size: contain;
+  }
+  .slide_title {
+    font-size: 43px;
+    line-height: 47px;
+  }
+}
+
+@media (max-width: 992px) {
+  .slide_nav {
+    display: none;
+  }
+  .slide_1n, .slide_2n, .slide_3n {
+    background: #DFF0FF url("https://qdenya.ru/box.png") no-repeat top right -60px;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide {
+    padding-top: 25px;
+    padding-bottom: 31px;
+  }
+  .slide_1n, .slide_2n, .slide_3n {
+    background: #DFF0FF url("https://qdenya.ru/box.png") no-repeat top right -160px;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 576px) {
+  .slide {
+    min-width: 0;
+  }
+  .slide_title {
+    font-size: 36px;
+    line-height: 1.4;
+    margin-bottom: 0;
+  }
+  .slide_1n, .slide_2n, .slide_3n {
+    background: #DFF0FF url("https://qdenya.ru/box.png") no-repeat top right -100px;
+    background-size: contain;
+  }
+  .slide_button {
+    padding: 5px 15px;
+  }
+  .slide_text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 378px) {
+  .slide_1n, .slide_2n, .slide_3n {
+    background: #DFF0FF url("https://qdenya.ru/box.png") no-repeat top right -250px;
+    background-size: cover;
+  }
+  .slide_description {
+    width: 65%;
+  }
+}
+
+@media (max-width: 320px) {
+  .slide_1n, .slide_2n, .slide_3n {
+    background: #DFF0FF url("https://qdenya.ru/box.png") no-repeat top right -140px;
+    background-size: contain;
+  }
+  .label {
+    margin-bottom: 22px;
+  }
+  .slide {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    min-width: 0;
+  }
+  .slide_title {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 27px;
+  }
+  .slide_description {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 27px;
+    width: 65%;
+  }
+}

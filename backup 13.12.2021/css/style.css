@@ -1,0 +1,336 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  position: relative;
+  background-color: #fdfdfd;
+}
+
+.text-light {
+  color: #ffffff !important;
+}
+
+.product-item-properties {
+  display: none !important;
+}
+
+.bx-basket-fixed {
+  display: none !important;
+}
+
+.label {
+  margin-right: auto;
+  background: #3dc47e;
+  border-radius: 3px;
+  padding: 5px 12px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.button {
+  background: #4592ff;
+  border-radius: 20px;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.button_link {
+  text-decoration: none;
+}
+
+.button_link:hover {
+  color: #ffffff;
+}
+
+.button_price,
+.button_icon {
+  margin-right: 10px;
+}
+
+.button_price:last-child,
+.button_icon:last-child {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.button_margin {
+  margin-right: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  min-height: 370px;
+  border-radius: 10px;
+  padding-top: 60px;
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-bottom: 80px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+}
+
+.card_link {
+  text-decoration: none !important;
+}
+
+.card_link:hover {
+  color: #ffffff;
+}
+
+.card_price {
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.card_title {
+  font-family: "Roboto Slab", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #262d33;
+  margin: 0;
+  max-width: 222px;
+}
+
+.card_2 .card_title {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.card_2 .card_text {
+  margin-top: 10px !important;
+  margin: auto;
+  text-align: center;
+}
+
+.card_3 .card_title {
+  margin-top: 10px;
+}
+
+.card_4 .card_title {
+  color: #8d3700;
+}
+
+.card_4 .card_text {
+  color: #262d33;
+}
+
+.card_text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #4b5157;
+  max-width: 176px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.card_1 {
+  background: #dcdeff url("https://site.lbts.by/img/card-1.png") no-repeat top
+    right;
+  background-size: contain;
+}
+
+.card_2 {
+  cursor: pointer;
+  background: #79b4d9 url("https://site.lbts.by/img/card-2.png") no-repeat top
+    right;
+  background-size: cover;
+  padding-top: 20px !important;
+}
+
+.card_3 {
+  background: #cce1e6 url("https://site.lbts.by/img/card-3.png") no-repeat top
+    right 105%;
+  background-size: cover;
+  padding-top: 35px;
+}
+
+.card_4 {
+  cursor: pointer;
+  background: #e0d3c3 url("https://site.lbts.by/img/card-4.png") no-repeat
+    center right;
+  background-size: cover;
+  padding-top: 35px;
+  padding-left: 25px;
+}
+
+.card_goods {
+  position: relative;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.card_goods_title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-family: "Roboto Slab", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #262d33;
+}
+
+.card_goods_description {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4b5157;
+  margin-bottom: 30px;
+}
+
+.card_goods_price {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 900;
+  color: #262d33;
+}
+
+.card:hover {
+  -webkit-filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3));
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+@media (max-width: 992px) {
+  body {
+    padding-top: 86px;
+  }
+  .header {
+    display: none;
+  }
+  .mheader,
+  .mheader_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header_menu_link:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 876px) {
+  .card:hover {
+    -webkit-filter: none;
+    filter: none;
+  }
+}
+
+@media (max-width: 690px) {
+  .header_menu_link {
+    font-weight: 500;
+  }
+  .header_contact_phone {
+    font-weight: 800;
+  }
+  .header_contact_time {
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 560px) {
+  .card_1 {
+    background: #dcdeff url("https://site.lbts.by/img/card-1.png") no-repeat top
+      right 150%;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 440px) {
+  .button {
+    background: #4592ff;
+    border-radius: 20px;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none !important;
+  }
+  .button_price,
+  .button_icon {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 380px) {
+  .card {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .card_3 {
+    background: #dcdeff url("https://site.lbts.by/img/card-3.png") no-repeat top
+      right 110%;
+    background-size: cover;
+  }
+  .button {
+    background: #4592ff;
+    border-radius: 20px;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .button_price,
+  .button_icon {
+    margin-right: 5px;
+  }
+}

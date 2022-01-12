@@ -1,0 +1,219 @@
+.insta {
+  overflow: hidden;
+}
+
+.insta_container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.insta_slide {
+  width: 295px;
+  min-height: 387px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  margin-right: 16px;
+}
+
+.insta_slide_head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 10px;
+}
+
+.insta_slide_head_texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10px;
+}
+
+.insta_slide_head_nickname {
+  font-family: 'Museo Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: -0.1px;
+  color: #262626;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.insta_slide_head_nickname:hover {
+  text-decoration: underline;
+}
+
+.insta_slide_head_nickname::after {
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: '';
+  background: url(../img/insta/official.svg) no-repeat center center;
+  background-size: cover;
+  margin-left: 3px;
+}
+
+.insta_slide_head_geo {
+  font-family: 'Museo Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.07px;
+  color: #262626;
+  margin: 0;
+}
+
+.insta_slide_head_logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  background: url(../img/insta/logo.jpg) center center;
+  background-size: cover;
+}
+
+.insta_slide_head_btn {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.insta_slide_photo {
+  border: 1px solid black;
+  height: 295px;
+  background: url(https://scontent.cdninstagram.com/v/t51.29350-15/270202729_1361505710938630_9024029243494657610_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=lWwCoT3LzQAAX-mJfoZ&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9BVLWG-EIxSedeucsFODlXM6TYP6t_SvuxYw-MT6ENfA&oe=61E3BBE8) center center;
+  background-size: cover;
+}
+
+.insta_slide_footer {
+  padding: 10px 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.insta_slide_footer_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.insta_slide_footer_like {
+  background: url(../img/insta/like.svg);
+  margin-right: 7px;
+}
+
+.insta_slide_footer_comment {
+  background: url(../img/insta/comment.svg);
+  margin-right: 7px;
+}
+
+.insta_slide_footer_direct {
+  background: url(../img/insta/direct.svg);
+}
+
+.insta_slide_footer_save {
+  background: url(../img/insta/save.svg);
+}
+
+.insta_slide_footer_dots {
+  background: url(../img/insta/dots.svg);
+}
+
+.insta_slide_footer_like, .insta_slide_footer_comment, .insta_slide_footer_direct, .insta_slide_footer_save, .insta_slide_footer_dots {
+  border: none;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+.insta_end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.insta_end_logo {
+  background: url(../img/insta/oval.svg) no-repeat;
+  width: 99px;
+  height: 99px;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.insta_end_logo_img {
+  width: 86px;
+  height: 86px;
+  background: url(../img/insta/logo.jpg) no-repeat center center;
+  background-size: cover;
+  border-radius: 50%;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.insta_end_link {
+  font-family: 'Museo Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 17px;
+  color: #FFFFFF;
+  background: #3797EF;
+  border-radius: 5px;
+  padding: 11px 29px;
+  text-decoration: none;
+}
+
+.insta_end_nickname {
+  font-family: 'Museo Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.15px;
+  color: #262626;
+  margin-top: 13px;
+  margin-bottom: 31px;
+}

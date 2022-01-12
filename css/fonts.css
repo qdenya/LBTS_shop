@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Lato';
+  src: url("https://site.lbts.by/fonts/Lato/Lato-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("https://site.lbts.by/fonts/Lato/Lato-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Hairline';
+  src: url("https://site.lbts.by/fonts/Lato/Lato-Hairline.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Heavy';
+  src: url("https://site.lbts.by/fonts/Lato/Lato-Heavy.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Italic';
+  src: url("https://site.lbts.by/fonts/Lato/Lato-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("https://site.lbts.by/fonts/Lato/Lato-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-LightItalic';
+  src: url("https://site.lbts.by/fonts/Lato/Lato-LightItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("https://site.lbts.by/fonts/Lato/Lato-Medium.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("https://site.lbts.by/fonts/Lato/Lato-Regular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("https://site.lbts.by/fonts/Lato/Lato-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("https://site.lbts.by/fonts/Lato/Lato-Thin.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-ThinItalic';
+  src: url("https://site.lbts.by/fonts/Lato/Lato-ThinItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Lato', 'sans-serif';
+}

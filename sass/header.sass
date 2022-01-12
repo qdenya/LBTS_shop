@@ -1,0 +1,301 @@
+.mheader
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 199
+  width: 80%
+  height: 100vh
+  display: none
+  background-color: #fff
+  transition: 0.5s
+  box-shadow: 8px 0px 24px rgba(1, 0, 39, 0.1)
+  transform: translateX(-100%)
+  &_active
+    transform: translateX(0%)
+  &_tab
+    margin-left: 16px
+    margin-top: 27px
+    &_links
+      &_items, &_info, &_phone
+        display: flex
+        flex-direction: column
+      &_info
+        margin-top: 18px
+      &_phone
+        margin-top: 93px
+        &_text
+          font-family: Lato
+          font-style: normal
+          font-weight: 500
+          font-size: 13px
+          line-height: 16px
+          letter-spacing: 0.5px
+          text-transform: uppercase
+          color: #939699
+      &_item
+        font-family: 'Lato', sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 14px
+        line-height: 20px
+        text-transform: uppercase
+        color: #939699
+        text-decoration: none !important
+        &_black
+          color: #000
+      &_item:not(:last-child)
+        margin-bottom: 8px
+      &_inst
+        margin-bottom: 12px
+  &_btn
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: 'Lato', sans-serif
+    font-style: normal
+    font-weight: bold
+    background: #FE3C81
+    border-radius: 20px
+    width: 99px
+    height: 29px
+    font-size: 12px
+    line-height: 20px
+    color: #FFFFFF
+    text-decoration: none !important
+    margin-top: 22px
+    &_close
+      background: url(https://site.lbts.by/img/cross.svg) no-repeat top center
+      display: flex
+      width: 12px
+      height: 12px
+      margin-bottom: 36px
+    &_open
+      background: url(https://site.lbts.by/img/hamburg.svg) no-repeat top center
+      display: flex
+      width: 20px
+      height: 18px
+      margin-left: 18px
+  &_top
+    height: 55px
+    width: 100%
+    box-shadow: 0px 8px 24px rgba(1, 0, 39, 0.1)
+    margin-bottom: 31px
+    display: none
+    justify-content: center
+    align-items: center
+    top: 0
+    left: 0
+    position: fixed
+    z-index: 100
+    background-color: #fff
+  &_logo
+    width: 88px
+    margin-left: 13px
+  &_cart
+    background: url(https://site.lbts.by/img/cart_m.svg) no-repeat top center
+    display: flex
+    width: 24px
+    height: 24px
+    margin-right: 18px
+    margin-left: auto
+
+.header_old
+  font-family: 'Lato', sans-serif
+  font-style: normal
+  margin: 10px 0
+  &_logo
+    padding: 12px 0
+    &_img
+      width: 160px
+  &_menu
+    &_link
+      font-weight: 600
+      font-size: 14px
+      line-height: 20px
+      text-transform: uppercase
+      color: #939699
+      text-decoration: none !important
+    &_link:not(:last-child)
+      margin-right: 29px
+    &_link:hover
+      color: #70B500
+    &_inst
+      &_link
+        display: flex
+        padding: 2px 12px
+        background: #FFFFFF
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 10px
+        text-decoration: none !important
+  &_contact
+    display: flex
+    flex-direction: column
+    &_phone
+      display: flex
+      justify-content: end
+      text-transform: uppercase
+      font-weight: 900
+      font-size: 15px
+      line-height: 20px
+      letter-spacing: 0.5px
+      color: #939699
+      text-decoration: none !important
+    &_time
+      display: flex
+      justify-content: end
+      text-transform: uppercase
+      font-weight: 500
+      font-size: 14px
+      line-height: 16px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: #939699
+
+.header
+  background-color: #fff
+  padding-top: 14px
+  padding-bottom: 11px
+  z-index: 10
+  box-shadow: 0px 8px 24px rgba(1, 0, 39, 0.1)
+  &_hr
+    background-color: rgba(147, 150, 153, 0.53)
+    margin-top: 14px
+    margin-bottom: 12px
+    height: 0.5px
+  &_logo
+    width: 160px
+    margin-right: 38px
+  &_catalog
+    z-index: 99
+    &_items
+      padding: 0
+      margin: 0
+      list-style: none
+      position: relative
+    &_item:not(:last-child)
+      margin-right: 54px
+    &_item:hover .header_catalog_item_link
+      color: #FF3B82
+    &_item:hover .header_catalog_item_link:after
+      width: 100%
+    &_item:focus .header_catalog_item_link:after
+      width: 100%
+    &_item
+      display: inline-block
+      &_link
+        font-family: 'Lato', sans-serif
+        font-style: normal
+        font-weight: 700
+        font-size: 14px
+        line-height: 20px
+        text-transform: uppercase
+        color: #939699
+        display: block
+        text-decoration: none !important
+      &_link::after
+        display: block
+        content: ""
+        height: 3px
+        width: 0%
+        border-radius: 3px
+        background-color: #FF3B82
+        transition: width 0.4s ease-in-out
+
+      &_ul
+        display: none
+        position: absolute
+        top: 100%
+        list-style: none
+        padding: 0
+        margin: 0
+        background: #FFFFFF
+        box-shadow: 0px 8px 24px rgba(1, 0, 39, 0.1)
+      &_li
+        min-width: 170px
+        display: list-item
+        position: relative
+        padding-left: 12px
+        padding-top: 7px
+        padding-right: 24px
+        &_link
+          font-family: 'Lato', sans-serif
+          font-style: normal
+          font-weight: 700
+          font-size: 14px
+          line-height: 20px
+          text-transform: uppercase
+          color: #939699
+          display: block
+          text-decoration: none !important
+        &_link:hover
+          color: #FF3B82
+      &_li:first-child
+        padding-top: 12px
+      &_li:last-child
+        padding-bottom: 12px
+        //box-shadow: 0px 8px 24px rgba(1, 0, 39, 0.1)
+    &_item:hover > ul
+      display: inherit
+  &_tel
+    display: flex
+    align-items: center
+    justify-content: end
+    &_link
+      margin-left: 3px
+      font-family: 'Lato', sans-serif
+      font-style: normal
+      font-weight: 500
+      font-size: 20px
+      line-height: 20px
+      text-transform: uppercase
+      color: #636363
+      text-decoration: none !important
+  &_menu
+    display: flex
+    &_items
+      display: flex
+      &_link
+        font-family: 'Lato', sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        line-height: 20px
+        letter-spacing: 0.5px
+        color: #939699
+        text-decoration: none !important
+        margin-right: 22px
+  &_right
+    display: flex
+    align-items: center
+    justify-content: end
+    &_cart
+      display: flex
+      align-items: center
+      margin-left: 39px
+      &_link
+        display: flex
+        align-items: center
+        text-decoration: none !important
+      &_text
+        font-family: 'Lato', sans-serif
+        font-style: normal
+        font-weight: 700
+        font-size: 14px
+        line-height: 20px
+        color: #FE3C81
+        margin-left: 7px
+    &_inst
+      display: flex
+
+@media (max-width: 1200px)
+  .header
+    &_catalog
+      &_items
+        height: 50px
+        align-content: center
+        display: flex
+        padding: 0
+        margin: 0
+        flex-direction: column
+        flex-wrap: wrap
+        justify-content: center

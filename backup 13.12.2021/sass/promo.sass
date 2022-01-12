@@ -1,0 +1,185 @@
+@font-face
+  font-family: 'Museo Sans Cyrl'
+  src: url('../fonts/MuseoSansCyrl-900.woff') format('woff')
+  font-weight: 900
+  font-style: normal
+
+@font-face
+  font-family: 'Museo Sans Cyrl'
+  src: url('../fonts/MuseoSansCyrl-700.woff') format('woff')
+  font-weight: 700
+  font-style: normal
+
+@font-face
+  font-family: 'Museo Sans Cyrl'
+  src: url('../fonts/MuseoSansCyrl-500.woff') format('woff')
+  font-weight: 500
+  font-style: normal
+
+@font-face
+  font-family: 'Museo Sans Cyrl'
+  src: url('../fonts/MuseoSansCyrl-300.woff') format('woff')
+  font-weight: 300
+  font-style: normal
+
+@font-face
+  font-family: 'Museo Sans Cyrl'
+  src: url('../fonts/MuseoSansCyrl-100.woff') format('woff')
+  font-weight: 100
+  font-style: normal
+
+body
+  font-family: 'Museo Sans Cyrl', sans-serif
+  background: #F8F8F8
+  padding-top: 0 !important
+
+.promo
+  width: 300px
+  height: 400px
+  &_card
+    user-select: none
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+    border-radius: 20px
+    background: #fff url('https://site.lbts.by/items/1001.jpg') no-repeat top 10% center
+    background-size: contain
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    &_offer
+      margin-top: 19px
+      margin-left: 19px
+      &_text
+        width: 105px
+        height: 31px
+        background: #803DDE
+        border-radius: 10px
+        padding: 4px 21px
+        font-size: 14px
+        line-height: 22px
+        color: #fff
+    &_price
+      max-height: 59px
+      display: flex
+      justify-content: end
+      max-width: 60px
+      flex-direction: column
+      margin-right: 58px
+      margin-left: auto
+      margin-bottom: 26px
+      margin-top: auto
+      &_main
+        display: flex
+        width: 60px
+        height: 42px
+        align-items: center
+        justify-content: center
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25)
+        background-color: #fff
+        &_total
+          display: flex
+          align-items: start
+          justify-content: center
+        &_rubl
+          font-size: 20px
+          line-height: 20px
+        &_kop
+          font-size: 10px
+          line-height: 12px
+    &_discount
+      margin-left: auto
+      width: 29px
+      height: 15px
+      background: #FE3C81
+      display: flex
+      align-items: center
+      justify-content: center
+      &_text
+        font-size: 10px
+        line-height: 22px
+        color: #fff
+    &_title
+      display: flex
+      justify-content: center
+      margin-bottom: 24px
+      &_text
+        font-size: 20px
+        line-height: 22px
+        font-weight: 500
+        text-align: center
+        max-width: 258px
+  &_button
+    font-size: 20px
+    line-height: 31px
+    padding: 20px 36px
+    background: #FE4388
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.25)
+    border-radius: 10px
+    text-decoration: none !important
+    color: #fff
+    margin-top: 55px
+  &_button:hover
+    box-shadow: inset 0px 3px 0px rgba(0, 0, 0, 0.25)
+    background: rgba(254, 67, 136, 0.9)
+
+.main
+  user-select: none
+  &_swiper
+    overflow: hidden
+  &_link
+    font-size: 15px
+    line-height: 31px
+    color: #969696
+    text-decoration: none !important
+    margin-top: 30px
+    margin-bottom: 38px
+  &_info
+    &_text
+      display: flex
+      max-width: 629px
+      font-weight: 300
+      font-size: 30px
+      line-height: 31px
+      color: #0A0A0A
+      padding-bottom: 51px
+    &_logo
+      padding-bottom: 61px
+      &_img
+        max-height: 87px
+.second
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+@media (max-width: 450px)
+  .main
+    &_info
+      &_logo
+        padding-bottom: 19px
+        &_img
+          max-height: 50px
+      &_text
+        font-size: 24px
+        line-height: 26px
+  .promo
+    width: 260px
+    height: 370px
+    &_button
+      font-size: 16px
+      line-height: 31px
+      padding: 13px 31px
+      margin-bottom: 31px
+
+@media (max-width: 400px)
+  .main
+    &_info
+      &_logo
+        &_img
+          max-height: 31px
+      &_text
+        font-size: 18px
+        line-height: 20px
+        max-width: 300px
+  .promo
+    width: 238px
+    height: 370px

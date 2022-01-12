@@ -1,0 +1,333 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+	<title>Выпадающее меню</title>
+	
+	<!-- СТИЛИ ДЛЯ ПЕРВОГО ПРИМЕРА -->
+	
+	<!--<style>
+		body {
+			font: 14px 'Verdana';
+			margin: 0;
+			padding: 0;
+		}
+		ul {
+			display: block;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		ul:after {
+			display: block;
+			content: ' ';
+			clear: both;
+			float: none;
+		}
+		ul.menu > li {
+			float: left;
+			position: relative;
+		}
+		ul.menu > li > a {
+			display: block;
+			padding: 10px;
+			color: white;
+			background-color: #da570f;
+			text-decoration: none;
+		}
+		ul.menu > li > a:hover {
+			background-color: #eb9316;
+		}
+		ul.submenu {
+			display: none;
+			position: absolute;
+			width: 240px;
+			top: 37px;
+			left: 0;
+			background-color: white;
+		}
+		ul.submenu > li {
+			display: block;
+		}
+		ul.submenu > li > a {
+			display: block;
+			padding: 10px;
+			color: white;
+			background-color: #da570f;
+			text-decoration: none;
+		}
+		ul.submenu > li > a:hover {
+			text-decoration: underline;
+			background-color: #eb9316;
+		}
+		ul.menu > li:hover > ul.submenu {
+			display: block;
+		}
+	</style>-->
+	
+	<!-- СТИЛИ ДЛЯ ВТОРОГО ПРИМЕРА -->
+	
+	<!--<style>/*
+		/* Обнуляю отступы и убираю маркеры у списков. */
+		ul, li {
+			margin:0;
+			padding:0;
+			list-style-type:none;   
+		}
+
+		/* Задаю параметры для основного, родительского блока, меню выпадающего списка. */
+		#menu {
+			display:block;
+			position:absolute;
+			top:20px;
+			left:20px;
+
+		}
+
+		/* Задаю стили для блоков выпадаюшего списка. */
+		#menu > li {
+			display:inline-block;
+			height:20px;
+			position:relative;
+		}
+
+		/* Задаю стили, чтобы скрыть дочерние блоки выпадающего списка. Ну и немного украшаю. */
+		#menu > li > ul {
+			position:absolute;
+			top:20px;
+			left: 10px;
+			display:none;
+			background-color: bisque;
+			border-radius: 5px;
+			width: 185px;
+			font-size: 14px;
+			padding: 10 0 10 10;
+		}
+
+		/* Так я делаю прежде скрытую часть видимой при наведении курсора. */
+		#menu > li:hover > ul {
+			display:block;  
+		}
+	</style>-->
+	
+	<!-- СТИЛИ ДЛЯ ТРЕТЬЕГО ПРИМЕРА -->
+	
+	<!--<style>
+		#nav{
+			float:left;
+			width:500px;
+			list-style:none;
+			font-weight:bold;
+			margin-bottom:10px;
+		}
+		#nav li{
+			float:left;
+			margin-right:10px;
+			position:relative;
+			display:block;
+		}
+		#nav li a{
+			display:block;
+			padding:5px;
+			color:#fff;
+			background:#333;
+			text-decoration:none;
+			text-shadow:1px 1px 1px rgba(0,0,0,0.75); /* Тень для визуальной приподнятости текста. */
+			-moz-border-radius:2px;
+			-webkit-border-radius:2px;
+			border-radius:2px;
+		}
+		#nav li a:hover{
+			color:#fff;
+			background:#6b0c36;
+			background:rgba(107,12,54,0.75); /* Заставляю выглядеть полупрозрачным. */
+			text-decoration:underline;
+		}
+		/*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
+		#nav ul{
+			list-style:none;
+			position:absolute;
+			left:-9999px; /* Убираю ненужно за пределы экрана (данный метод лучше, чем display:none; т.к. некоторые программы для чтения с экрана игнорирую это свойство). */
+			opacity:0; /* При помощи прозрачности, скрываем <ul>. */
+			-webkit-transition:0.25s linear opacity; /* Делаем так, чтобы Webkit плавно показывал нам всплывающие элементы выпадающего списка при наведении мышки. */
+		}
+		#nav ul li{
+			padding-top:1px; /* Здесь я задаю отступ между элементами li. Это необходимо для разделения пунктов меню, его не было в предыдущей части статьи (просто забыл).  */
+			float:none;
+			background:url(dot.gif);
+		}
+		#nav ul a{
+			white-space:nowrap; /* Запрещаю перенос строк текста на новую строку, чтобы создавался многострочный выпадающий элемент списка. */
+			display:block;
+		}
+		#nav li:hover ul{ /* Создаю выпадающий пункт, который появится при наведении курсора. */
+			left:0; /* Возвращаю его обратно на экран пользователя, — когда нужно. */
+			opacity:1; /* Убираю прозрачность. */
+		}
+		#nav li:hover a{ /* В этом стиле я устанавливаю свойства для элементов верхнего уровня, — в то время, когда показывается выпадающий список. */
+			background:#6b0c36;
+			background:rgba(107,12,54,0.75); /* Длеаю полупрозрачным. */
+			text-decoration:underline;
+		}
+		#nav li:hover ul a{ /* Поменял некоторые стили первого уровня при появлении выпадающего пункта. */
+			text-decoration:none;
+			-webkit-transition:-webkit-transform 0.075s linear;
+		}
+		#nav li:hover ul li a:hover{ /* Здесь я задаю стили для конкретных выпадающих пунктов, при наведении на них курсора — чтобы они отличались от тех элементов, куда курсор не попадает. */
+			background:#333;
+			background:rgba(51,51,51,0.75); /* Делаю полупрозрачным. */
+			text-decoration:underline;
+			-moz-transform:scale(1.05);
+			-webkit-transform:scale(1.05);
+		}
+	</style>-->
+	
+	<!-- СТИЛИ ДЛЯ ЧЕТВЕРТОГО ПРИМЕРА -->
+	
+	<!--<style>
+		ul.dropdown li { position: relative; }
+		ul.dropdown, ul.dropdown-inside {
+			list-style-type: none;
+			padding: 0;
+			}
+		ul.dropdown-inside {
+			position: absolute;
+			left: -9999px;
+			}
+		ul.dropdown li.dropdown-top {
+			display: inline;
+			float: left;
+			margin: 0 1px 0 0;
+			}
+		ul.dropdown li.dropdown-top a {
+			padding: 3px 10px 4px;
+			display: block;
+			}
+		ul.dropdown a.dropdown-top { background: 		#efefef; }
+		ul.dropdown a.dropdown-top:hover { padding: 	3px 10px 4px; }
+		ul.dropdown li.dropdown-top:hover .dropdown-inside {
+			display: block;
+			left: 0;
+			}
+		ul.dropdown .dropdown-inside { background: 		#fff; }
+		ul.dropdown .dropdown-inside a:hover { background: #efefef; }
+	</style>-->
+</head>
+  
+<!-- ПЕРВЫЙ ПРИМЕР -->
+
+<!--   
+<ul class="menu">
+	<li><a href=#>Меню №1</a>
+		<ul class="submenu">
+			<li><a href=#>Субменю №1 первого меню</a></li>
+		</ul>
+	</li>
+	<li><a href=#>Меню №2</a>
+		<ul class="submenu">
+			<li><a href=#>Субменю №2 второго меню</a></li>
+			<li><a href=#>Субменю №2 второго меню</a></li>
+		</ul>
+	</li>
+	<li><a href=#>Меню №3</a>
+		<ul class="submenu">
+			<li><a href=#>Субменю №3 третьего меню</a></li>
+			<li><a href=#>Субменю №3 третьего меню</a></li>
+			<li><a href=#>Субменю №3 третьего меню</a></li>
+		</ul>
+	</li>
+</ul>   
+-->
+
+<!-- ВТОРОЙ ПРИМЕР -->
+
+<!--
+<ul id="menu">
+<li><a href="#">Раздел меню №1</a></li>
+<li><a href="#">Раздел меню №2</a>
+	<ul>
+		<li><a href="#">Подраздел №1 второго меню</a></li>
+		<li><a href="#">Подраздел №2 второго меню</a></li>
+	</ul>
+</li>
+<li><a href="#">Раздел меню №3</a>
+	<ul>
+		<li><a href="#">Подраздел №1 третьего меню</a></li>
+		<li><a href="#">Подраздел №2 третьего меню</a></li>
+		<li><a href="#">Подраздел №3 третьего меню</a></li>
+	</ul>
+</li>       
+</ul>
+-->
+
+<!-- ТРЕТИЙ ПРИМЕР -->
+
+<!--
+<ul id="nav">
+	<li>
+		<a href="#" title="Здесь ссылка на главную">Главная</a>
+	</li>
+	<li>
+		<a href="#" title="Здесь информация о компании">О нас</a>
+		<ul>
+			<li><a href="#">Суперпродукты</a></li>
+			<li><a href="#">Суперкоманда</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="#" title="Здесь будут ваши услуги">Услуги</a>
+		<ul>
+			<li><a href="#">Крутая услуга №1</a></li>
+			<li><a href="#">Крутая услуга №2</a></li>
+			<li><a href="#">Крутая услуга №3</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="#" title="Здесь разместите ссылки на ващи продукты">Продукты</a>
+		<ul>
+			<li><a href="#">Суперсылка №1</a></li>
+			<li><a href="#">Суперсылка №2</a></li>
+			<li><a href="#">Суперсылка №3</a></li>
+			<li><a href="#">Суперсылка №4</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="#" title="Раздел контактов">Контакт</a>
+		<ul>
+			<li><a href="#">Часы работы</a></li>
+			<li><a href="#">Местоположение</a></li>
+			<li><a href="#">Выпадающий список 10/10!</a></li>
+		</ul>
+	</li>
+</ul>
+-->
+
+<!-- ЧЕТВЕРТЫЙ ПРИМЕР -->
+
+<!--
+<ul class="dropdown">
+	<li class="dropdown-top">
+	<a class="dropdown-top" href="/">Красноярский край</a>
+		<ul class="dropdown-inside">
+			<li><a href="/">Красноярск</a></li>
+			<li><a href="/">Норильск</a></li>
+			<li><a href="/">Ачинск</a></li>
+			<li><a href="/">Канск</a></li>
+			<li><a href="/">Железногорск</a></li>
+		</ul>
+	</li>
+
+	<li class="dropdown-top">
+	<a class="dropdown-top" href="/">Свердловская область</a>
+		<ul class="dropdown-inside">
+			<li><a href="/">Екатеринбург</a></li>
+			<li><a href="/">Нижний Тагил</a></li>
+			<li><a href="/">Каменск-Уральский</a></li>
+			<li><a href="/">Первоуральск</a></li>
+			<li><a href="/">Асбест</a></li>
+			<li><a href="/">Верхняя Пышма</a></li>
+		</ul>
+	</li>
+</ul>
+-->
+
+</html>

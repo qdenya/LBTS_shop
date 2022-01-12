@@ -1,0 +1,231 @@
+*
+  box-sizing: border-box
+
+body
+  margin: 0
+  font-family: "Lato", sans-serif
+  font-style: normal
+  position: relative
+  background-color: #FDFDFD
+
+.text-light
+  color: #ffffff !important
+
+.product-item-properties
+  display: none !important
+
+.bx-basket-fixed
+  display: none !important
+
+.label
+  margin-right: auto
+  background: #3DC47E
+  border-radius: 3px
+  padding: 5px 12px
+  color: #ffffff
+  font-size: 12px
+  line-height: 15px
+
+.button
+  background: #4592FF
+  border-radius: 20px
+  border: none
+  color: #ffffff
+  padding: 10px 20px
+  font-weight: 700
+  font-size: 14px
+  line-height: 20px
+  display: flex
+  align-items: center
+  cursor: pointer
+  text-decoration: none !important
+  &_link
+    text-decoration: none
+  &_link:hover
+    color: #ffffff
+  &_price,
+  &_icon
+    margin-right: 10px
+    &:last-child
+      margin-right: 0
+      margin-left: 10px
+  &_margin
+    margin-right: auto
+
+.container
+  max-width: 1200px
+  margin: auto
+
+.card
+  transition: 0.1s
+  min-height: 370px
+  border-radius: 10px
+  padding-top: 60px
+  padding-left: 46px
+  padding-right: 46px
+  padding-bottom: 80px
+  user-select: none
+  border: none
+  &_link
+    text-decoration: none !important
+  &_link:hover
+    color: #ffffff
+  &_price
+    color: #ffffff
+    font-family: 'Lato', sans-serif
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+  &_title
+    font-family: 'Roboto Slab', sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 25px
+    line-height: 30px
+    color: #262D33
+    margin: 0
+    max-width: 222px
+  .card_2 &_title
+    margin: 10px auto
+    text-align: center
+  .card_2 &_text
+    margin-top: 10px !important
+    margin: auto
+    text-align: center
+  .card_3 &_title
+    margin-top: 10px
+  .card_4 &_title
+    color: #8D3700
+  .card_4 &_text
+    color: #262D33
+  &_text
+    font-size: 14px
+    line-height: 20px
+    color: #4B5157
+    max-width: 176px
+    margin-bottom: 25px
+    margin-top: 10px
+  &_1
+    background: #DCDEFF url('https://site.lbts.by/img/card-1.png') no-repeat top right
+    background-size: contain
+  &_2
+    cursor: pointer
+    background: #79B4D9 url('https://site.lbts.by/img/card-2.png') no-repeat top right
+    background-size: cover
+    padding-top: 20px !important
+  &_3
+    background: #CCE1E6 url('https://site.lbts.by/img/card-3.png') no-repeat top right 105%
+    background-size: cover
+    padding-top: 35px
+  &_4
+    cursor: pointer
+    background: #E0D3C3 url('https://site.lbts.by/img/card-4.png') no-repeat center right
+    background-size: cover
+    padding-top: 35px
+    padding-left: 25px
+  &_goods
+    position: relative
+    text-align: center
+    padding-top: 30px
+    padding-bottom: 35px
+    padding-left: 36px
+    padding-right: 36px
+    &_title
+      margin-top: 15px
+      margin-bottom: 5px
+      font-family: 'Roboto Slab', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      text-align: center
+      color: #262D33
+    &_description
+      font-family: 'Lato', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #4B5157
+      margin-bottom: 30px
+    &_price
+      font-family: Lato
+      font-size: 18px
+      line-height: 30px
+      font-weight: 900
+      color: #262D33
+
+.card:hover
+  filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3))
+  transition: 0.1s
+
+@media (max-width: 992px)
+  body
+    padding-top: 86px
+  .header
+    display: none
+  .mheader, .mheader_top
+    display: flex
+  .header_menu_link:not(:last-child)
+    margin-right: 0
+
+@media (max-width: 876px)
+  .card:hover
+    filter: none
+
+@media (max-width: 690px)
+  .header_menu_link
+    font-weight: 500
+  .header_contact_phone
+    font-weight: 800
+  .header_contact_time
+    font-weight: 400
+
+@media (max-width: 560px)
+  .card
+    &_1
+      background: #DCDEFF url('https://site.lbts.by/img/card-1.png') no-repeat top right 150%
+      background-size: cover
+
+@media (max-width: 440px)
+  .button
+    background: #4592FF
+    border-radius: 20px
+    border: none
+    color: #ffffff
+    padding: 10px 20px
+    font-weight: 700
+    font-size: 12px
+    line-height: 14px
+    display: flex
+    align-items: center
+    cursor: pointer
+    text-decoration: none !important
+    &_price,
+    &_icon
+      margin-right: 5px
+
+@media (max-width: 380px)
+
+  .card
+    padding-left: 20px
+    padding-right: 20px
+    &_3
+      background: #DCDEFF url('https://site.lbts.by/img/card-3.png') no-repeat top right 110%
+      background-size: cover
+  .button
+    background: #4592FF
+    border-radius: 20px
+    border: none
+    color: #ffffff
+    padding: 10px 20px
+    font-weight: 700
+    font-size: 12px
+    line-height: 14px
+    display: flex
+    align-items: center
+    cursor: pointer
+    &_price,
+    &_icon
+      margin-right: 5px

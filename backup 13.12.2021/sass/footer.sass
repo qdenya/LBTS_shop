@@ -1,0 +1,42 @@
+.footer
+  user-select: none
+  background-color: rgba(255, 88, 155, 0.57)
+  padding-bottom: 21px
+  &_top
+    padding-top: 28px
+  &_hr
+    background-color: rgba(242, 242, 242, 0.73)
+    margin-top: 28px
+    height: 0.5px
+  &_btm
+    margin-top: 18px
+    &_ip
+      &_text
+        font-family: Roboto Slab
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 19px
+        color: #FFFFFF
+    &_contacts
+      &_item
+        display: flex
+        align-items: center
+      &_text
+        margin-left: 5px
+        font-family: Roboto Slab
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 14px
+        color: #FFFFFF
+        text-decoration: none !important
+
+@media (max-width: 380px)
+  .footer
+    &_top
+      &_items
+        max-height: 20px
+    &_btm
+      &_contacts
+        margin-top: 10px

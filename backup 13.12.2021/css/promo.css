@@ -1,0 +1,295 @@
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("../fonts/MuseoSansCyrl-900.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("../fonts/MuseoSansCyrl-700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("../fonts/MuseoSansCyrl-500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("../fonts/MuseoSansCyrl-300.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("../fonts/MuseoSansCyrl-100.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  background: #f8f8f8;
+  padding-top: 0 !important;
+}
+
+.promo {
+  width: 300px;
+  height: 400px;
+}
+
+.promo_card {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background: #fff url("https://site.lbts.by/items/1001.jpg") no-repeat top 10%
+    center;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.promo_card_offer {
+  margin-top: 19px;
+  margin-left: 19px;
+}
+
+.promo_card_offer_text {
+  width: 105px;
+  height: 31px;
+  background: #803dde;
+  border-radius: 10px;
+  padding: 4px 21px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.promo_card_price {
+  max-height: 59px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  max-width: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-right: 58px;
+  margin-left: auto;
+  margin-bottom: 26px;
+  margin-top: auto;
+}
+
+.promo_card_price_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  height: 42px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+
+.promo_card_price_main_total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.promo_card_price_main_rubl {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.promo_card_price_main_kop {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.promo_card_discount {
+  margin-left: auto;
+  width: 29px;
+  height: 15px;
+  background: #fe3c81;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.promo_card_discount_text {
+  font-size: 10px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.promo_card_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.promo_card_title_text {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+  text-align: center;
+  max-width: 258px;
+}
+
+.promo_button {
+  font-size: 20px;
+  line-height: 31px;
+  padding: 20px 36px;
+  background: #fe4388;
+  -webkit-box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  text-decoration: none !important;
+  color: #fff;
+  margin-top: 55px;
+}
+
+.promo_button:hover {
+  -webkit-box-shadow: inset 0px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 3px 0px rgba(0, 0, 0, 0.25);
+  background: rgba(254, 67, 136, 0.9);
+}
+
+.main {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.main_swiper {
+  overflow: hidden;
+}
+
+.main_link {
+  font-size: 15px;
+  line-height: 31px;
+  color: #969696;
+  text-decoration: none !important;
+  margin-top: 30px;
+  margin-bottom: 38px;
+}
+
+.main_info_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 629px;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 31px;
+  color: #0a0a0a;
+  padding-bottom: 51px;
+}
+
+.main_info_logo {
+  padding-bottom: 61px;
+}
+
+.main_info_logo_img {
+  max-height: 87px;
+}
+
+.second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (max-width: 450px) {
+  .main_info_logo {
+    padding-bottom: 19px;
+  }
+  .main_info_logo_img {
+    max-height: 50px;
+  }
+  .main_info_text {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .promo {
+    width: 260px;
+    height: 370px;
+  }
+  .promo_button {
+    font-size: 16px;
+    line-height: 31px;
+    padding: 13px 31px;
+    margin-bottom: 31px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main_info_logo_img {
+    max-height: 31px;
+  }
+  .main_info_text {
+    font-size: 18px;
+    line-height: 20px;
+    max-width: 300px;
+  }
+  .promo {
+    width: 238px;
+    height: 370px;
+  }
+}

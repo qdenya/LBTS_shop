@@ -1,0 +1,143 @@
+.slide
+  padding-top: 38px
+  padding-bottom: 38px
+  //min-width: 568px
+  &_1n
+    background: #DFF0FF url('https://qdenya.ru/box.png') no-repeat top right 25%
+    background-size: contain
+  &_2n
+    background: #b3b3b3 url('../img/slide-image-1.png') no-repeat top right 25%
+    background-size: contain
+  &_3n
+    background: #b3b3b3 url('../img/slide-image-1.png') no-repeat top right 25%
+    background-size: contain
+  &_title
+    font-family: 'Roboto Slab', serif
+    font-style: normal
+    font-weight: bold
+    font-size: 55px
+    line-height: 70px
+    display: flex
+    align-items: center
+    color: #262D33
+    margin-top: 20px
+    margin-bottom: 15px
+  &_description
+
+    font-family: 'Lato', sans-serif
+    font-weight: 500
+    font-size: 18px
+    line-height: 30px
+    color: #4B5157
+    max-width: 335px
+    margin-bottom: 40px
+  &_nav
+    z-index: 9
+    position: absolute
+    top: 50%
+    width: 100%
+    transform: translateY(-50%)
+  &_button
+    background-color: transparent
+    border: none
+    cursor: pointer
+    background-color: #4592FF
+    border-radius: 20px
+    padding: 10px 28px
+    text-decoration: none !important
+    &_text
+      font-family: 'Lato', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 14px
+      line-height: 20px
+      color: #FFFFFF
+    &_nav
+      background-color: transparent
+      border: none
+      cursor: pointer
+      border-radius: 20px
+  &_label
+    background: #3DC47E
+    border-radius: 3px
+    padding: 5px 12px
+    font-family: 'Lato', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: #FFFFFF
+
+.slider
+  overflow: hidden
+  position: relative
+
+@media (max-width: 1200px)
+  .slide
+    &_1n, &_2n, &_3n
+      background: #DFF0FF url('https://qdenya.ru/box.png') no-repeat top right 10px
+      background-size: contain
+    &_title
+      font-size: 43px
+      line-height: 47px
+
+@media (max-width: 992px)
+  .slide
+    &_nav
+      display: none
+    &_1n, &_2n, &_3n
+      background: #DFF0FF url('https://qdenya.ru/box.png') no-repeat top right -60px
+      background-size: contain
+
+@media (max-width: 768px)
+  .slide
+    padding-top: 25px
+    padding-bottom: 31px
+    &_1n, &_2n, &_3n
+      background: #DFF0FF url('https://qdenya.ru/box.png') no-repeat top right -160px
+      background-size: contain
+
+@media (max-width: 576px)
+  .slide
+    min-width: 0
+    &_title
+      font-size: 36px
+      line-height: 1.4
+      margin-bottom: 0
+    &_1n, &_2n, &_3n
+      background: #DFF0FF url('https://qdenya.ru/box.png') no-repeat top right -100px
+      background-size: contain
+    &_button
+      padding: 5px 15px
+    &_text
+      font-size: 12px
+      line-height: 20px
+
+@media (max-width: 378px)
+  .slide
+    &_1n, &_2n, &_3n
+      background: #DFF0FF url('https://qdenya.ru/box.png') no-repeat top right -250px
+      background-size: cover
+    &_description
+      width: 65%
+
+@media (max-width: 320px)
+  .slide
+    &_1n, &_2n, &_3n
+      background: #DFF0FF url('https://qdenya.ru/box.png') no-repeat top right -140px
+      background-size: contain
+  .label
+    margin-bottom: 22px
+  .slide
+    padding-top: 25px
+    padding-bottom: 25px
+    min-width: 0
+    &_title
+      font-size: 20px
+      line-height: 23px
+      margin-bottom: 27px
+    &_description
+      font-size: 14px
+      line-height: 17px
+      margin-bottom: 27px
+      width: 65%

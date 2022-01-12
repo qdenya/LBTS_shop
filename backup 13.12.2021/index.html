@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://site.lbts.by/css/fonts.css">
+    <link rel="stylesheet" href="https://site.lbts.by/css/header.css">
+    <link rel="stylesheet" href="https://site.lbts.by/css/slider.css">
+    <link rel="stylesheet" href="https://site.lbts.by/css/style.css">
+    <link rel="stylesheet" href="https://site.lbts.by/css/footer.css">
+    <link rel="stylesheet" href="https://site.lbts.by/css/bootstrap-grid.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/slider.css">
+    
+    
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="header_menu col-3">
+            <div class="header_menu_items">
+              <a href="/pay-methods" class="header_menu_items_link">Оплата</a>
+              <a href="/delivery" class="header_menu_items_link">Доставка</a>
+              <a href="/returns" class="header_menu_items_link">Возврат</a>
+              <a href="/kontakty" class="header_menu_items_link">Контакты</a>
+            </div>
+          </div>
+          <div class="header_right col-3">
+            <a href="https://instagram.com/lbtsshop" class="header_right_inst">
+              <img src="https://site.lbts.by/img/instagram.svg" alt="Instagram" class="header_right_inst_img">
+            </a>
+            <div class="header_right_cart">
+              
+              <a href="/oformleniezakaza" class="header_right_cart_link">
+                <img src="https://site.lbts.by/img/cart-new.svg" alt="Cart" class="header_right_cart_icon">
+                <span class="header_right_cart_text">Корзина</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header_hr"></div>
+        <div class="row align-items-center">
+          <div class="header_logo col-2">
+            <a href="/" class="header_logo_link">
+              <img src="https://site.lbts.by/img/logo.svg" alt="Logo" class="header_logo_img">
+            </a>
+          </div>
+          <div class="header_catalog col">
+            <ul class="header_catalog_items">
+              <li class="header_catalog_item">
+                <a href="/brends" class="header_catalog_item_link">Бренды</a>
+                <ul class="header_catalog_item_ul">
+                  <li class="header_catalog_item_li">
+                    <a href="/brends/#cosrx" class="header_catalog_item_li_link">Cosrx</a>
+                  </li>
+                  <li class="header_catalog_item_li">
+                    <a href="/brends/#drjart" class="header_catalog_item_li_link">Dr.Jart+</a>
+                  </li>
+                  <li class="header_catalog_item_li">
+                    <a href="/brends/#elizavecca" class="header_catalog_item_li_link">Elizavecca</a>
+                  </li>
+                  <li class="header_catalog_item_li">
+                    <a href="/brends/#esthetic" class="header_catalog_item_li_link">Esthetic house</a>
+                  </li>
+                  <li class="header_catalog_item_li">
+                    <a href="/brends/#farmstay" class="header_catalog_item_li_link">Farmstay</a>
+                  </li>
+                  <li class="header_catalog_item_li">
+                    <a href="/brends/#holika" class="header_catalog_item_li_link">Holika Holika</a>
+                  </li>
+                  <li class="header_catalog_item_li">
+                    <a href="/brends/#innisfree" class="header_catalog_item_li_link">Innisfree</a>
+                  </li>
+                  <li class="header_catalog_item_li">
+                    <a href="/brends/#itsskin" class="header_catalog_item_li_link">It's Skin</a>
+                  </li>
+                  <li class="header_catalog_item_li">
+                    <a href="/brends/#jigott" class="header_catalog_item_li_link">Jigott</a>
+                  </li>
+                  <li class="header_catalog_item_li">
+                    <a href="/brends/#koelf" class="header_catalog_item_li_link">Koelf</a>
+                  </li>
+                  <li class="header_catalog_item_li">
+                    <a href="/brends/#laneige" class="header_catalog_item_li_link">Laneige</a>
+                  </li>
+                  <li class="header_catalog_item_li">
+                    <a href="/brends/#petitfee" class="header_catalog_item_li_link">Petitfee</a>
+                  </li>
+                  <li class="header_catalog_item_li">
+                    <a href="/brends/#tonymoly" class="header_catalog_item_li_link">Tonymoly</a>
+                  </li>
+                  <li class="header_catalog_item_li">
+                    <a href="/brends/#lador" class="header_catalog_item_li_link">La'dor</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header_catalog_item">
+                <a href="/katalog/bests/" class="header_catalog_item_link">Лучшие из лучших</a>
+              </li>
+              <li class="header_catalog_item">
+                <a href="/katalog/skin-care" class="header_catalog_item_link">Уход за кожей</a>
+                <ul class="header_catalog_item_ul">
+                  <li class="header_catalog_item_li">
+                    <a href="/katalog/face/" class="header_catalog_item_li_link">Умывание и очищение лица</a>
+                  </li>
+                  <li class="header_catalog_item_li">
+                    <a href="/katalog/toner/" class="header_catalog_item_li_link">Тонеры</a>
+                  </li>
+                  <li class="header_catalog_item_li">
+                    <a href="/katalog/serums-essences/" class="header_catalog_item_li_link">Сыворотки и эссенции</a>
+                  </li>
+                  <li class="header_catalog_item_li">
+                    <a href="/katalog/masks-patches/" class="header_catalog_item_li_link">Маски/Патчи</a>
+                  </li>
+                  <li class="header_catalog_item_li">
+                    <a href="/katalog/face-creams/" class="header_catalog_item_li_link">Кремы для лица</a>
+                  </li>
+                  <li class="header_catalog_item_li">
+                    <a href="/katalog/other-body/" class="header_catalog_item_li_link">Прочие средства ухода</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header_catalog_item">
+                <a href="/katalog/hair-body/" class="header_catalog_item_link">Волосы и тело</a>
+                <ul class="header_catalog_item_ul">
+                  <li class="header_catalog_item_li">
+                    <a href="/katalog/hair/" class="header_catalog_item_li_link">Уход за волосами</a>
+                  </li>
+                  <li class="header_catalog_item_li">
+                    <a href="/katalog/body/" class="header_catalog_item_li_link">Уход за телом</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="header_tel col-3">
+            <img src="https://site.lbts.by/img/tel_icon.svg" alt="Icon_telefon" class="header_tel_icon">
+            <a href="tel:+375293724013" class="header_tel_link">+375(29)372-40-13</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="mheader_top">
+      <a href="#" class="mheader_btn_open"></a>
+      <a href="/" class="mheader_logo">
+        <img src="https://site.lbts.by/img/logo.svg" alt="Logo" class="mheader_logo_img">
+      </a>
+      <a href="/oformleniezakaza" class="mheader_cart"></a>
+    </div>
+    <div class="mheader"> 
+      <nav class="mheader_tab">
+        <a href="#" class="mheader_btn_close"></a>
+        <div class="mheader_tab_links">
+          <div class="mheader_tab_links_items">
+            <a href="/katalog" class="mheader_tab_links_item mheader_tab_links_item_black">Все категории</a>
+            <a href="/brends" class="mheader_tab_links_item">Бренды</a>
+            <a href="/katalog/bestes" class="mheader_tab_links_item">Лучшие из лучших</a>
+            <a href="/katalog/skin-care" class="mheader_tab_links_item">Уход за кожей</a>
+            <a href="/katalog/hair-body" class="mheader_tab_links_item">Волосы и тело</a>
+          </div>
+          <div class="mheader_tab_links_info">
+            <a href="/pay-methods" class="mheader_tab_links_item">Оплата</a>
+            <a href="/delivery" class="mheader_tab_links_item">Доставка</a>
+            <a href="/returns" class="mheader_tab_links_item">Возврат</a>
+            <a href="/kontakty" class="mheader_tab_links_item">Контакты</a>
+          </div>
+          <div class="mheader_tab_links_phone">
+            <a href="https://instagram.com/lbtsshop" class="mheader_tab_links_inst">
+              <img src="https://site.lbts.by/img/instagram.svg" alt="Instagram" class="mheader_tab_links_ints_img">
+            </a>
+            <a href="tel:+375293724013" class="mheader_tab_links_item">+375(29)372-40-13</a>
+            <span class="mheader_tab_links_phone_text">Пн-пт: 10:00-19:00<br>сб-вс: 11:00-18:00</span>
+            <a href="tel:+375293724013" class="mheader_btn">Позвонить</a>
+          </div>
+        </div>
+
+      </nav>
+    </div>
+    <div class="slider swiper-container">
+      <div class="swiper-wrapper">
+        <section class="slide slide_1n swiper-slide">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5 col-10 offset-lg-1">
+                <span class="slide_label">Новинка</span>
+                <h2 class="slide_title">70% скидка<br>по предзаказу!</h2>
+                <p class="slide_description">Собираем эффективный beauty box!</p>
+                <a href="#" class="slide_button">
+                  <span class="slide_button_text">Посмотреть</span>
+                </a>
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+        </section>
+      </div>
+      <div class="slide_nav">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-1">
+              <button class="slide_button_nav slider-button-prev">
+                <img src="https://site.lbts.by/img/arrow-prew.svg" alt="prev">
+              </button>
+            </div>
+            <!-- /.col-1 -->
+            <div class="col-1">
+              <button class="slide_button_nav slider-button-next">
+                <img src="https://site.lbts.by/img/arrow-next.svg" alt="next">
+              </button>
+            </div>
+            <!-- /.col-1 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+    </div>
+    <div class="container pt-5 pb-4">
+      <div class="row mb-4">
+        <div class="col-xl-6 col-lg-6">
+          <div class="card card_1 mb-4">
+            <h3 class="card_title">Наши бренды</h3>
+            <p class="card_text">
+              Оригинальная косметика
+              La'dor, It's skin, COSRX, Elizavecca с доставкой
+              прямо до квартиры.
+            </p>
+            <a href="#" class="button button_margin button_link">
+              <span class="button_text">Посмотреть</span>
+              <!-- <img src="img/arrow.svg" alt="pointer" class="button_icon"> -->
+            </a>
+          </div>
+        </div>
+        <!-- /.col-6 -->
+        <div class="col-xl-6 col-lg-6">
+          <a href="#" class="card_link">
+            <div class="card card_2 mb-4">
+              <h3 class="card_title text-light">Лучшие из лучших</h3>
+              <p class="card_text text-light">
+                Уход за собой оригинальной корейской
+                косметикой.
+              </p>
+              <!-- <button class="button">
+                <span class="button_text">Посмотреть</span>
+                <img src="img/arrow.svg" alt="pointer" class="button_icon"> 
+              </button> -->
+            </div>
+          </a>
+        </div>
+        <!-- /.col-6 -->
+        <div class="col-xl-9 col-lg-6">
+          <div class="card card_3 mb-4">
+            <span class="label">Bestseller</span>
+            <h3 class="card_title large">Уход за кожей</h3>
+            <p class="card_text large">
+              Попробуйте увлажняющий тоник для лица IT'S SKIN
+            </p>
+            <a href="#" class="button button_margin button_link">
+              <span class="button_price">24.99</span>
+              <span class="button_text"> BYN</span>
+            </a>
+          </div>
+        </div>
+        <!-- /.col-9 -->
+        <div class="col-xl-3 col-lg-6">
+          <a href="#" class="card_link">
+            <div class="card card_4">
+              <h3 class="card_title">Волосы<br>и тело</h3>
+              <p class="card_text">
+                Посмотрите<br>эти новинки
+              </p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer_top d-lg-flex">
+            <div class="footer_top_items col-lg-6 col-12 d-flex justify-content-center justify-content-lg-end">
+              <img src="https://site.lbts.by/img/pay/logo1.svg" alt="logos_pays" class="footer_top_pay">
+            </div>
+            <div class="footer_top_items col-lg-6 col-12 d-flex justify-content-center justify-content-lg-start">
+              <img src="https://site.lbts.by/img/pay/logo2.svg" alt="logos_pays" class="footer_top_pay">
+            </div>
+          </div>
+        </div>
+        <div class="footer_hr"></div>
+        <div class="row">
+          <div class="footer_btm d-lg-flex justify-content-between align-items-center">
+            <div class="footer_btm_ip col-lg-6 col-12 d-lg-block d-sm-flex justify-content-center">
+              <span class="footer_btm_ip_text">
+                ИП Лабуть Евгений Брониславович, УНП 391029792<br>
+                Зарегистрирован Браславским райисполкомом 6 февраля 2018 г. за № 391029792<br>
+                Адрес: Витебская обл., Браславский р-н, д. Урбаны, ул. Молодежная, д. 12.<br>
+                Сайт LBTS.BY зарегистрирован в Торговом реестре Республики Беларусь: 15.11.2021г.
+              </span>
+            </div>
+            <div class="footer_btm_contacts col-lg-4 col-12 d-lg-block d-sm-flex justify-content-center">
+              <div class="footer_btm_contacts_item">
+                <img src="https://site.lbts.by/img/footer_time.svg" alt="logo time" class="footer_btm_contacts_img">
+                <span class="footer_btm_contacts_text">
+                  Консультант: пн-пт 10.00-19.00, сб-вс 11.00-18.00
+                </span>
+              </div>
+              <div class="footer_btm_contacts_item">
+                <img src="https://site.lbts.by/img/footer_tel.svg" alt="logo tel" class="footer_btm_contacts_img">
+                <a href="tel:+375293724013" class="footer_btm_contacts_text">
+                  +375(29)372-40-13
+                </a>
+              </div>
+              <div class="footer_btm_contacts_item">
+                <img src="https://site.lbts.by/img/footer_mail.svg" alt="logo mail" class="footer_btm_contacts_img">
+                <a href="mailto:shoplbts@gmail.com" class="footer_btm_contacts_text">
+                  shoplbts@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper-container', {
+          loop: true,
+          autoplay: {
+            delay: 5000,
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: '.slider-button-next',
+            prevEl: '.slider-button-prev',
+          },
+
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $('.mheader_btn_close').on('click', function (e) {
+          e.preventDefault();
+          $('.mheader').toggleClass('mheader_active');
+        });
+      $('.mheader_btn_open').on('click', function (e) {
+          e.preventDefault();
+          $('.mheader').toggleClass('mheader_active');
+        })  
+    </script>
+  </body>
+</html>

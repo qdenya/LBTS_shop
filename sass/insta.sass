@@ -1,0 +1,132 @@
+.insta
+  overflow: hidden
+  &_container
+    display: inline-flex
+    margin-bottom: 10px
+    margin-top: 10px
+  &_slide
+    width: 295px
+    min-height: 387px
+    border-radius: 10px
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25)
+    margin-right: 16px
+    &_head
+      display: flex
+      align-items: center
+      padding: 8px 10px
+      &_texts
+        display: flex
+        flex-direction: column
+        margin-left: 10px
+      &_nickname
+        font-family: 'Museo Sans', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 14px
+        letter-spacing: -0.1px
+        color: #262626
+        margin: 0
+        display: flex
+        align-items: center
+        text-decoration: none
+      &_nickname:hover
+        text-decoration: underline
+      &_nickname::after
+        display: block
+        width: 12px
+        height: 12px
+        content: ''
+        background: url(../img/insta/official.svg) no-repeat center center
+        background-size: cover
+        margin-left: 3px
+      &_geo
+        font-family: 'Museo Sans', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 10px
+        line-height: 12px
+        letter-spacing: 0.07px
+        color: #262626
+        margin: 0
+      &_logo
+        width: 32px
+        height: 32px
+        border-radius: 50%
+        border: 0.5px solid rgba(0, 0, 0, 0.1)
+        background: url(../img/insta/logo.jpg) center center
+        background-size: cover
+      &_btn
+        margin-right: 0
+        margin-left: auto
+    &_photo
+      border: 1px solid black
+      height: 295px
+      background: url(https://scontent.cdninstagram.com/v/t51.29350-15/270202729_1361505710938630_9024029243494657610_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=lWwCoT3LzQAAX-mJfoZ&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9BVLWG-EIxSedeucsFODlXM6TYP6t_SvuxYw-MT6ENfA&oe=61E3BBE8) center center
+      background-size: cover
+    &_footer
+      padding: 10px 14px
+      display: flex
+      justify-content: space-between
+      &_left
+        display: flex
+        align-items: center
+      &_like
+        background: url(../img/insta/like.svg)
+        margin-right: 7px
+      &_comment
+        background: url(../img/insta/comment.svg)
+        margin-right: 7px
+      &_direct
+        background: url(../img/insta/direct.svg)
+      &_save
+        background: url(../img/insta/save.svg)
+      &_dots
+        background: url(../img/insta/dots.svg)
+
+      &_like, &_comment, &_direct, &_save, &_dots
+        border: none
+        background-size: cover
+        width: 20px
+        height: 20px
+  &_end
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &_logo
+      background: url(../img/insta/oval.svg) no-repeat
+      width: 99px
+      height: 99px
+      background-size: contain
+      display: flex
+      justify-content: center
+      align-items: center
+      &_img
+        width: 86px
+        height: 86px
+        background: url(../img/insta/logo.jpg) no-repeat center center
+        background-size: cover
+        border-radius: 50%
+        border: 0.5px solid rgba(0, 0, 0, 0.1)
+    &_link
+      font-family: 'Museo Sans', sans-serif
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 17px
+      color: #FFFFFF
+      background: #3797EF
+      border-radius: 5px
+      padding: 11px 29px
+      text-decoration: none
+    &_nickname
+      font-family: 'Museo Sans', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 17px
+      letter-spacing: -0.15px
+      color: #262626
+      margin-top: 13px
+      margin-bottom: 31px

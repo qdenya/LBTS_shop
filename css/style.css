@@ -1,0 +1,717 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  position: relative;
+  background-color: #FDFDFD;
+}
+
+.product-item-label-text.product-item-label-small span {
+  font-weight: 600 !important;
+}
+
+.text-light {
+  color: #ffffff !important;
+}
+
+.product-item-properties {
+  display: none !important;
+}
+
+.bx-basket-fixed {
+  display: none !important;
+}
+
+.label {
+  margin-right: auto;
+  background: #3DC47E;
+  border-radius: 3px;
+  padding: 5px 12px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.button {
+  background: #4592FF;
+  border-radius: 20px;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.button_link {
+  text-decoration: none;
+}
+
+.button_link:hover {
+  color: #ffffff;
+}
+
+.button_price, .button_icon {
+  margin-right: 10px;
+}
+
+.button_price:last-child, .button_icon:last-child {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.button_margin {
+  margin-right: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  min-height: 370px;
+  border-radius: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: none;
+}
+
+.card_link {
+  text-decoration: none !important;
+}
+
+.card_link:hover {
+  color: #ffffff;
+}
+
+.card_price {
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.card_title {
+  font-family: 'Roboto Slab', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #262D33;
+  margin: 0;
+  max-width: 222px;
+}
+
+.card_2 .card_title {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.card_2 .card_text {
+  margin-top: 10px !important;
+  margin: auto;
+  text-align: center;
+}
+
+.card_3 .card_title {
+  margin-top: 10px;
+}
+
+.card_4 .card_title {
+  color: #8D3700;
+}
+
+.card_4 .card_text {
+  color: #262D33;
+}
+
+.card_text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+  max-width: 176px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.card_1 {
+  background: #DCDEFF url("https://site.lbts.by/img/new/1.png") no-repeat center;
+  background-size: cover;
+  padding: 24px 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+}
+
+.card_1_label {
+  font-family: 'Museo Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  padding: 5px 12px;
+  background-color: #FFADC5;
+  border-radius: 3px;
+  margin: 0 auto 0 0;
+}
+
+.card_1_title {
+  font-family: 'Museo Sans', sans-serif;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 30px;
+  line-height: 102.5%;
+  color: #000000;
+  margin: 12px 0 auto 0;
+}
+
+.card_1_price {
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  background: #FBFBFB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: 100px;
+  -webkit-animation: price 2s infinite;
+          animation: price 2s infinite;
+  -webkit-box-shadow: 0 0 0 0 #00000066;
+          box-shadow: 0 0 0 0 #00000066;
+}
+
+.card_1_price_total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card_1_price_rubl {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -0.01px;
+  color: #000000;
+}
+
+.card_1_price_kop {
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: -0.01px;
+  color: #000000;
+}
+
+.card_1_price_valuta {
+  margin-top: -4px;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: -0.01px;
+  color: #000000;
+}
+
+.card_1_name {
+  font-family: 'Museo Sans', sans-serif;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 15px;
+  line-height: 97.5%;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.card_1_val {
+  font-family: 'Museo Sans', sans-serif;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 12px;
+  line-height: 97.5%;
+  color: #000000;
+  margin: 0;
+}
+
+.card_2 {
+  cursor: pointer;
+  background: #79B4D9 url("https://site.lbts.by/img/new/2.png") no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 35px 27px;
+}
+
+.card_2_title {
+  font-family: 'Museo Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #494949;
+  margin: 0 auto 58px 0;
+}
+
+.card_2_text {
+  font-family: 'Museo Sans', sans-serif;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 35px;
+  line-height: 111.5%;
+  color: #494949;
+  margin: 0;
+}
+
+.card_3 {
+  background: #CCE1E6 url("https://site.lbts.by/img/new/3.png") no-repeat center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: pointer;
+}
+
+.card_3_left {
+  width: 50%;
+  padding: 47px 0 17px 22px;
+}
+
+.card_3_left_name {
+  font-family: 'Museo Sans', sans-serif;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 15px;
+  line-height: 103%;
+  letter-spacing: -0.01px;
+  color: #000000;
+  margin: 25px 0 7px 0;
+}
+
+.card_3_left_val {
+  font-family: 'Museo Sans', sans-serif;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 12px;
+  line-height: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: -0.01px;
+  color: #000000;
+  margin: 0 auto 0 0;
+}
+
+.card_3_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  width: 50%;
+  padding: 17px 40px 23px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card_3_right_title {
+  font-family: 'Museo Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #F1F0F4;
+  margin: 0;
+  text-align: end;
+  text-align: -webkit-right;
+  margin-left: auto;
+}
+
+.card_3_right_text {
+  font-family: 'Museo Sans', sans-serif;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 35px;
+  line-height: 42px;
+  color: #FFFFFF;
+  text-align: right;
+  margin: auto 0 0 auto;
+}
+
+.card_3_right_par {
+  font-family: 'Museo Sans', sans-serif;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  color: #FFFFFF;
+  margin: 4px 0 auto auto;
+}
+
+.card_3_right_btn {
+  font-family: 'Museo Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #F0F0F1;
+  text-decoration: none !important;
+  border: 1px solid #F0F0F1;
+  padding: 15px 17px;
+  margin-left: auto;
+}
+
+.card_4 {
+  cursor: pointer;
+  background: #E0D3C3 url("https://site.lbts.by/img/new/4.png") no-repeat center;
+  background-size: cover;
+  padding: 25px 17px;
+}
+
+.card_4_title {
+  font-family: 'Museo Sans', sans-serif;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 43px;
+  line-height: 85%;
+  text-align: right;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.card_4_text {
+  font-family: 'Museo Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 103.5%;
+  text-align: right;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.card_goods {
+  position: relative;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.card_goods_title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-family: 'Roboto Slab', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #262D33;
+}
+
+.card_goods_description {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+  margin-bottom: 30px;
+}
+
+.card_goods_price {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 900;
+  color: #262D33;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+@-webkit-keyframes price {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #00000066;
+            box-shadow: 0 0 0 0 #00000066;
+  }
+  80% {
+    -webkit-box-shadow: 0 0 0 15px transparent;
+            box-shadow: 0 0 0 15px transparent;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 transparent;
+            box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+@keyframes price {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #00000066;
+            box-shadow: 0 0 0 0 #00000066;
+  }
+  80% {
+    -webkit-box-shadow: 0 0 0 15px transparent;
+            box-shadow: 0 0 0 15px transparent;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 transparent;
+            box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card_3_left {
+    padding-left: 10px;
+  }
+  .card_3_right {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    padding-top: 60px;
+  }
+  .header {
+    display: none;
+  }
+  .mheader, .mheader_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header_menu_link:not(:last-child) {
+    margin-right: 0;
+  }
+  .card_1_price {
+    margin-right: 60px;
+  }
+  .card_3_left {
+    display: none;
+  }
+  .card_3_right {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 944px) {
+  .slide_1n_left_text_2 {
+    width: 40%;
+  }
+  .card_3 {
+    background-position-x: -270px;
+  }
+  .card_3_right {
+    padding-right: 15px;
+    padding-top: 36px;
+  }
+}
+
+@media (max-width: 876px) {
+  .card:hover {
+    -webkit-filter: none;
+            filter: none;
+  }
+  .card_1_price {
+    margin-right: 35px;
+  }
+  .card_3 {
+    background-position-x: -315px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card_1_price {
+    margin-right: 25%;
+  }
+  .card_3 {
+    background-position-x: right;
+  }
+  .card_3_right {
+    width: 60%;
+  }
+}
+
+@media (max-width: 690px) {
+  .header_menu_link {
+    font-weight: 500;
+  }
+  .header_contact_phone {
+    font-weight: 800;
+  }
+  .header_contact_time {
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 560px) {
+  .card_1 {
+    background-size: cover;
+  }
+  .card_3 {
+    background-position-x: center;
+  }
+}
+
+@media (max-width: 468px) {
+  .card_3 {
+    background-position-x: -260px;
+  }
+}
+
+@media (max-width: 440px) {
+  .button {
+    background: #4592FF;
+    border-radius: 20px;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    text-decoration: none !important;
+  }
+  .button_price, .button_icon {
+    margin-right: 5px;
+  }
+  .card_1_price {
+    margin-right: 10%;
+  }
+  .card_3 {
+    background-position-x: -313px;
+  }
+}
+
+@media (max-width: 380px) {
+  .card_1 {
+    padding: 15px 10px;
+  }
+  .card_1_price {
+    margin-right: 0;
+  }
+  .card_2 {
+    padding: 15px 10px;
+    background-position-x: -80px;
+  }
+  .card_2_title {
+    font-size: 14px;
+  }
+  .card_2_text {
+    font-size: 25px;
+  }
+  .card_3 {
+    background-size: cover;
+  }
+  .card_3_right {
+    width: 70%;
+  }
+  .card_3_right_text {
+    font-size: 25px;
+    line-height: 26px;
+  }
+  .card_3_right_par {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .card_3_right_title {
+    font-size: 13px;
+  }
+  .button {
+    background: #4592FF;
+    border-radius: 20px;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  .button_price, .button_icon {
+    margin-right: 5px;
+  }
+}
