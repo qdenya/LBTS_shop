@@ -8,6 +8,11 @@
   display: inline-flex;
   margin-bottom: 10px;
   margin-top: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 390px;
 }
 
 .insta_slide {
@@ -146,8 +151,8 @@
 .insta_slide_footer_like, .insta_slide_footer_comment, .insta_slide_footer_direct, .insta_slide_footer_save, .insta_slide_footer_dots {
   border: none;
   background-size: cover;
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
   background-repeat: no-repeat;
   background-position: center center;
 }
