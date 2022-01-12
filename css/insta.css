@@ -117,7 +117,7 @@
           justify-content: space-between;
 }
 
-.insta_slide_footer_left {
+.insta_slide_footer_left, .insta_slide_footer_right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
