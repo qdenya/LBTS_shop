@@ -6,7 +6,12 @@ $arr1 = json_decode($body1, JSON_UNESCAPED_UNICODE);
 $body = json_encode($arr1['data'], JSON_UNESCAPED_UNICODE);
 $arr = json_decode($body, JSON_UNESCAPED_UNICODE);
 
-print_r($body);
+$new = array();
+
+for($i=0; $i<6; $i++) {
+  array_push($new, $arr[$i]);
+}
+print_r(json_encode($new,JSON_UNESCAPED_UNICODE));
 
 
 ?>

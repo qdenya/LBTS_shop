@@ -1,3 +1,4 @@
+const wrapper = document.querySelector('.insta_container');
 const getData = async function(url) {
   const response = await fetch(url);
   if(!response.ok) {
@@ -8,8 +9,6 @@ const getData = async function(url) {
 
 function createGalery(items) {
   const { id, media_url, permalink } = items;
-  const wrapper = document.querySelector('.insta_container');
-
    let card =  `
     <div class="swiper-slide insta_slide">
       <div class="insta_slide_head">
@@ -43,7 +42,55 @@ function createGalery(items) {
 
  getData('https://site.lbts.by/api/insta.php').then(function(data) {
   data.forEach(createGalery);
+  let card =  `
+    <div class="swiper-slide insta_slide insta_end">
+      <div class="insta_end">
+        <a href="https://www.instagram.com/lbtsshop/" class="insta_end_logo">
+          <div class="insta_end_logo_img"></div>
+        </a>
+        <a href="https://www.instagram.com/lbtsshop/" class="insta_end_nickname">lbtsshop</a>
+        <a href="https://www.instagram.com/lbtsshop/" class="insta_end_link">Открыть</a>
+      </div>
+    </div>
+  `;
+  wrapper.insertAdjacentHTML('beforeEnd', card);
+  const swiperInst = new Swiper('.swiper-insta', {
+            loop: true,
+            autoplay: {
+              delay: 5000,
+            },
+            slidesPerView: 4,
+            spaceBetween: 20,
+            
+
+            breakpoints: {
+              100: {
+                slidesPerView: 1,
+              },
+              320: {
+                slidesPerView: 1,
+              },
+              480: {
+                slidesPerView: 2,
+              },
+              992: {
+                slidesPerView: 4,
+              }
+            },
+            slidesPerView: "auto",
+            // Navigation arrows
+            navigation: {
+              nextEl: '.slider-button-next',
+              prevEl: '.slider-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+              el: '.swiper-scrollbar',
+            },
+          });
   });
+  
   
   
   
