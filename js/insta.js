@@ -42,7 +42,7 @@ function createGalery(items) {
 
 
  getData('https://site.lbts.by/api/insta.php').then(function(data) {
-  data['data'].forEach(createGalery);
+  data.forEach(createGalery);
   });
   
   
