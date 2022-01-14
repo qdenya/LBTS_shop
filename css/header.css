@@ -446,14 +446,18 @@
   text-decoration: none !important;
 }
 
+.header_right_cart_link:first-child {
+  margin-right: 15px;
+}
+
 .header_right_cart_text {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Museo Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   color: #FE3C81;
-  margin-left: 7px;
+  margin-left: 5px;
 }
 
 .header_right_inst {
