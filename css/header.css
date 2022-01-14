@@ -450,6 +450,17 @@
   margin-right: 15px;
 }
 
+.header_right_cart_link_mob {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none !important;
+  margin-bottom: 18px;
+}
+
 .header_right_cart_text {
   font-family: 'Museo Sans', sans-serif;
   font-style: normal;
